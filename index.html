@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Node69 Studio - AI Content Creation & Video Production">
+    <title>Node69 Studio | AI Content Creation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 2rem;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 700px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .logo {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: 0.3s;
+        }
+        
+        .feature:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+        
+        .feature i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .feature h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .social-btn {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid rgba(255,255,255,0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .social-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .social-btn i {
+            font-size: 1.2rem;
+        }
+        
+        .email-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .email-section p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .email-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.8rem 2rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50px;
+            display: inline-block;
+            transition: 0.3s;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .email-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+        
+        footer {
+            margin-top: 3rem;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .logo { font-size: 2.5rem; }
+            .tagline { font-size: 1.2rem; }
+            .description { font-size: 1rem; }
+            .social-btn { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">NODE69</div>
+        <div class="tagline">AI Content Studio</div>
+        
+        <div class="description">
+            Creiamo contenuti video innovativi utilizzando <strong>intelligenza artificiale</strong>. 
+            Sperimentiamo quotidianamente con le tecnologie più avanzate per produrre video 
+            educativi, narrativi e creativi.
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-robot"></i>
+                <h3>AI Generation</h3>
+                <p>Stable Diffusion per visual photo-realistic</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-microphone"></i>
+                <h3>Voice Synthesis</h3>
+                <p>Narrazione naturale in italiano</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-video"></i>
+                <h3>Automated Video</h3>
+                <p>Workflow di produzione scalabili</p>
+            </div>
+        </div>
+        
+        <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+            <strong>Seguici sui nostri canali per contenuti quotidiani</strong>
+        </p>
+        
+        <div class="social-links">
+            <a href="https://youtube.com/@node69studio" target="_blank" class="social-btn">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://tiktok.com/@node69studio" target="_blank" class="social-btn">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://instagram.com/node69studio" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+        
+        <div class="email-section">
+            <p>Vuoi collaborare o saperne di più?</p>
+            <a href="mailto:info@node69.com" class="email-link">
+                <i class="fas fa-envelope"></i> info@node69.com
+            </a>
+        </div>
+        
+        <footer>
+            © 2025 Node69 Studio • Made with AI in Turin, Italy 🇮🇹
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+### **C) Commit File**
+
+1. Scroll in fondo alla pagina
+2. Commit message: `Add landing page`
+3. Click **"Commit new file"**
+
+---
+
+## **STEP 3: DEPLOY CLOUDFLARE PAGES (5 min)**
+
+### **A) Apri Cloudflare Dashboard**
+
+Browser → https://dash.cloudflare.com
+
+### **B) Vai a Workers & Pages**
+
+Sidebar sinistra → **Workers & Pages**
+
+### **C) Crea Applicazione**
+
+1. Click **"Create application"**
+2. Tab **"Pages"**
+3. Click **"Connect to Git"**
+
+### **D) Connetti GitHub**
+
+1. Click **"Connect GitHub"**
+2. Se prima volta: **Authorize Cloudflare**
+3. Select repository: **node69-landing**
+4. Click **"Begin setup"**
+
+### **E) Configurazione Progetto**
+```
+Project name: node69-landing
+Production branch: main
+
+Build settings:
+  Framework preset: None
+  Build command: (lascia vuoto)
+  Build output directory: / 
+  Root directory: (lascia vuoto)
