@@ -88,13 +88,12 @@
         }
         
         .logo-image {
-            max-width: 500px; !important;
-            border: 2px solid red;
-            width: 100%;
+            width: min(420px, 90vw);
             height: auto;
-            filter: drop-shadow(0 10px 30px rgba(0, 212, 255, 0.3));
-            transition: all 0.3s ease;
+            filter: drop-shadow(0 25px 70px rgba(0,212,255,.45));
+         transition: transform .35s ease, filter .35s ease;
         }
+
         
         .logo-image:hover {
             filter: drop-shadow(0 15px 40px rgba(0, 212, 255, 0.5));
@@ -316,6 +315,12 @@
         }
         
         /* Responsive */
+        @media (max-width: 768px) {
+            .logo-image {
+                width: min(300px, 85vw);
+           }
+        }
+
         @media (max-width: 768px) {
             .logo-image {
                 max-width: 220px;
